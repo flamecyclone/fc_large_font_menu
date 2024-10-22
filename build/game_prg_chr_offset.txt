@@ -1,0 +1,9 @@
+rom prg offset:
+0000 00080000 020000 [忍者龙剑传][Ninja Gaiden][J][Mapper4]
+0001 000A0000 020000 [忍者龙剑传2][Ninja Gaiden 2][J][Mapper4]
+0002 000C0000 020000 [忍者龙剑传3][Ninja Gaiden 3][J][Mapper4]
+
+rom chr offset:
+0000 000E0000 020000 [忍者龙剑传][Ninja Gaiden][J][Mapper4]
+0001 00100000 020000 [忍者龙剑传2][Ninja Gaiden 2][J][Mapper4]
+0002 00120000 020000 [忍者龙剑传3][Ninja Gaiden 3][J][Mapper4]
