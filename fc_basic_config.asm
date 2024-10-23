@@ -162,7 +162,23 @@ ROM_16KB_PRG_SIZE = NES_16KB_PRG_SIZE
 ITEM_INDEX_MAX              =   ITEM_COUNT_MAX - 1      ;项最大索引(0-65535)
 ITEM_PAGE_ROW               =   10                      ;每页行数(1-20)
 ITEM_PAGE_COLUMN            =   1                       ;每页列数(1-5)
+
+    .IF ITEM_COUNT_MAX >= 0 & ITEM_COUNT_MAX < 10
+ITEM_ORDINAL_LENGTH         =   1                       ;文本序号长度(1-5)
+    .ENDIF
+
+    .IF ITEM_COUNT_MAX >= 10 & ITEM_COUNT_MAX < 100
+ITEM_ORDINAL_LENGTH         =   2                       ;文本序号长度(1-5)
+    .ENDIF
+
+    .IF ITEM_COUNT_MAX >= 100 & ITEM_COUNT_MAX < 1000
+ITEM_ORDINAL_LENGTH         =   3                       ;文本序号长度(1-5)
+    .ENDIF
+
+    .IF ITEM_COUNT_MAX >= 1000 & ITEM_COUNT_MAX < 10000
 ITEM_ORDINAL_LENGTH         =   4                       ;文本序号长度(1-5)
+    .ENDIF
+
 ITEM_ORDINAL_DOT            =   1                       ;序号后点号
 LIST_ITEM_POS               =   $20C3                   ;列表显示位置
 LIST_ITEM_LINE_SPACING      =   1                       ;列表空行(0-2)
