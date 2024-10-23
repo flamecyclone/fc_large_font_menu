@@ -4,7 +4,7 @@ Item_Text_Start_0000_Index
     .DW Item_Text_0000;节目名1
     .DW Item_Text_0001;节目名2
     .DW Item_Text_0002;魂斗罗
-    .DW Item_Text_0003;Air Fortress
+    .DW Item_Text_0003;测试
     .DW Item_Text_0004;Aliens - Alien 2
     .DW Item_Text_0005;alpha mission
     .DW Item_Text_0006;Alwa's Awakening
@@ -121,10 +121,10 @@ Item_Text_Start_0000_Index
     .DW Item_Text_0117;碰碰车
     .DW Item_Text_0118;水管玛丽
     .DW Item_Text_0119;炸弹杰克
-Item_Text_0000 .DB $07,$0C,$0D,$0E,$0F,$10,$11,'1'
-Item_Text_0001 .DB $07,$0C,$0D,$0E,$0F,$10,$11,'2'
-Item_Text_0002 .DB $06,$18,$19,$1A,$1B,$1C,$1D
-Item_Text_0003 .DB $0C,'A','i','r',' ','F','o','r','t','r','e','s','s'
+Item_Text_0000 .DB $07,$10,$11,$12,$13,$14,$15,'1'
+Item_Text_0001 .DB $07,$10,$11,$12,$13,$14,$15,'2'
+Item_Text_0002 .DB $06,$00,$01,$02,$03,$04,$05
+Item_Text_0003 .DB $04,$00,$01,$02,$03
 Item_Text_0004 .DB $10,'A','l','i','e','n','s',' ','-',' ','A','l','i','e','n',' ','2'
 Item_Text_0005 .DB $0D,'a','l','p','h','a',' ','m','i','s','s','i','o','n'
 Item_Text_0006 .DB $10,'A','l','w','a',''','s',' ','A','w','a','k','e','n','i','n','g'
@@ -233,11 +233,11 @@ Item_Text_0108 .DB $06,'W','i','t',''','s',' '
 Item_Text_0109 .DB $09,'W','o','l','v','e','r','i','n','e'
 Item_Text_0110 .DB $16,'Z','e','l','d','a',' ','I','I',' ','T','h','e',' ','A','d','v','e','n','t','u','r','e'
 Item_Text_0111 .DB $18,'z','K','I','R','A',' ','K','I','R','A',' ','S','T','A','R',' ','N','I','G','H','T',' ','D','X'
-Item_Text_0112 .DB $07,$00,$01,$02,$03,$04,$05,'1'
-Item_Text_0113 .DB $07,$00,$01,$02,$03,$04,$05,'2'
-Item_Text_0114 .DB $07,$00,$01,$02,$03,$04,$05,'3'
-Item_Text_0115 .DB $06,$12,$13,$14,$15,$16,$17
-Item_Text_0116 .DB $0A,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19
-Item_Text_0117 .DB $06,$06,$07,$08,$09,$0A,$0B
-Item_Text_0118 .DB $08,$00,$01,$02,$03,$04,$05,$06,$07
-Item_Text_0119 .DB $08,$08,$09,$0A,$0B,$0C,$0D,$0E,$0F
+Item_Text_0112 .DB $07,$04,$05,$06,$07,$08,$09,'1'
+Item_Text_0113 .DB $07,$04,$05,$06,$07,$08,$09,'2'
+Item_Text_0114 .DB $07,$04,$05,$06,$07,$08,$09,'3'
+Item_Text_0115 .DB $06,$16,$17,$18,$19,$1A,$1B
+Item_Text_0116 .DB $0A,$16,$17,$18,$19,$1A,$1B,$1C,$1D,$1E,$1F
+Item_Text_0117 .DB $06,$0A,$0B,$0C,$0D,$0E,$0F
+Item_Text_0118 .DB $08,$06,$07,$08,$09,$0A,$0B,$0C,$0D
+Item_Text_0119 .DB $08,$0E,$0F,$10,$11,$12,$13,$14,$15
