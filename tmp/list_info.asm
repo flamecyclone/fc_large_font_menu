@@ -1,1 +1,1 @@
-Item_Text_Line_Count = 72
+Item_Text_Line_Count = 10
