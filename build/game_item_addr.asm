@@ -1,1 +1,0 @@
-ITEM_SHOW_POS = $20B0

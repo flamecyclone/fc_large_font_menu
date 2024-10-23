@@ -11,9 +11,27 @@ ITEM_COUNT_MAX              =   Item_Text_Item_Count
 ITEM_ORDINAL_BEGIN          =   001                    ;起始项序号
 
 ;--------------------------------------------------------------------------------------------------
-ROM_MAPPER                  =   342 ;342: CoolGirl 268: CoolBoy
-SUB_NUMBER                  =   0   ;子映射器号 0:  CoolBoy 1: MindKids
+;ROM_MAPPER                  =   342 ;342: CoolGirl 268: CoolBoy
+;SUB_NUMBER                  =   0   ;子映射器号 0:  CoolBoy 1: MindKids
 MAPPER_NUMBER               =   4   ;映射器号
+
+    .INCLUDE "build/game_config.asm"
+
+    .IF 0 = BOARD_TYPE
+ROM_MAPPER                  =   268
+SUB_NUMBER                  =   0
+    .ENDIF
+
+    .IF 1 = BOARD_TYPE
+ROM_MAPPER                  =   268
+SUB_NUMBER                  =   1
+    .ENDIF
+
+    .IF 2 = BOARD_TYPE
+ROM_MAPPER                  =   342
+SUB_NUMBER                  =   0
+    .ENDIF
+
 ;-------------------------------------------------
 LIST_FIRST_IRQ_VALUE        =   40
 LIST_TITLE_NEXT_VALUE       =   5
