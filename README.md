@@ -60,4 +60,4 @@ FC_Font_Tool_List.exe 节目名文本
 
 ### 5.预览ROM效果
 
-![image-20241023154500419](assets/image-20241023154500419.png)
+![image-20241023183743048](./assets/image-20241023183743048.png)
