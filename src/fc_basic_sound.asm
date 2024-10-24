@@ -2,10 +2,12 @@
 ;项切换音效
 FC_Sound_For_Item_Index_Changed
     .IF MUSIC_PLAY_ENABLE
-        .IF (FC_MUSIC_THEME > 0) & (CUSTOM_MUSIC_ITEM_CHANGE > 0)
-            LDA #CUSTOM_MUSIC_ITEM_CHANGE - 1
-            STA FC_Music_Index
-            JSR Music_Track_Select
+        .IF (FC_MUSIC_THEME > 0)
+            .IF CUSTOM_MUSIC_ITEM_CHANGE > 0
+                LDA #CUSTOM_MUSIC_ITEM_CHANGE - 1
+                STA FC_Music_Index
+                JSR Music_Track_Select
+            .ENDIF
         .ELSE
              LDA #$03
              STA $4015
@@ -28,10 +30,12 @@ FC_Sound_For_Item_Index_Changed
 FC_Sound_For_Page_Index_Changed
 
     .IF MUSIC_PLAY_ENABLE > 0
-        .IF (FC_MUSIC_THEME > 0) & (CUSTOM_MUSIC_PAGE_CHANGE > 0)
-            LDA #CUSTOM_MUSIC_PAGE_CHANGE - 1
-            STA FC_Music_Index
-            JSR Music_Track_Select
+        .IF (FC_MUSIC_THEME > 0)
+            .IF CUSTOM_MUSIC_PAGE_CHANGE > 0
+                LDA #CUSTOM_MUSIC_PAGE_CHANGE - 1
+                STA FC_Music_Index
+                JSR Music_Track_Select
+            .ENDIF
         .ELSE
              LDA #$03
              STA $4015
@@ -54,10 +58,12 @@ FC_Sound_For_Page_Index_Changed
 FC_Sound_For_Enter_Item
 
     .IF MUSIC_PLAY_ENABLE > 0
-        .IF (FC_MUSIC_THEME > 0) & (CUSTOM_MUSIC_ITEM_ENTER > 0)
-            LDA #CUSTOM_MUSIC_ITEM_ENTER - 1
-            STA FC_Music_Index
-            JSR Music_Track_Select
+        .IF (FC_MUSIC_THEME > 0)
+            .IF CUSTOM_MUSIC_ITEM_ENTER > 0
+                LDA #CUSTOM_MUSIC_ITEM_ENTER - 1
+                STA FC_Music_Index
+                JSR Music_Track_Select
+            .ENDIF
         .ELSE
              LDA #$02
              STA $4015
